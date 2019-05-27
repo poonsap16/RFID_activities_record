@@ -11,31 +11,38 @@
     <title>@yield('title')</title>
   </head>
   <body>
- 
-  <nav class="navbar navbar-expand-lg bg-info navbar-dark sticky-top">
-  <a class="navbar-brand" href="#">RFID</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse nav justify-content-center" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">หน้าแรก <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">ตารางกิจกรรม</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">ติดต่อสอบถาม</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">เข้าสู่ระบบ</a>
-      </li>
-    </ul>
-  </div>
-</nav>
 
-    <!-- Optional JavaScript -->
+    <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top  navbar-transparent">
+
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">RFID Activities Record</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-dark">Login</button>
+          </li>
+         </ul>
+
+
+
+      </div>
+    </div>
+   </nav>
+
+       <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
