@@ -1,18 +1,21 @@
 
-@extends('layouts.main')
+@extends('layouts.app')
 
-@section('title',"RFID")
+@section('title','RFID')
 
+@include('layouts.nevbar')
 
-@section('sidebar')
-    @parent
+@section('head')
+ระบบรายงานการทาบบัตรเข้าร่วมกิจกรรม ภาควิชาอายุรศาสตร์
 @endsection
 
-
-
-@section('footer')
-
+@section('content')
+<blockquote>
+สำหรับทำรายงานการทาบบัตรของอาจารย์ และแพทย์ประจำบ้าน แพทย์ประจำบ้านต่อยอด<br>
+ ที่ทาบบัตรเข้าร่วมกิจกรรมของภาควิชาอายุรศาสตร์
+</blockquote>
 @endsection
+
 
 
 

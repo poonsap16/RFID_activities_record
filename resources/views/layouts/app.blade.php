@@ -11,30 +11,19 @@
     <title>@yield('title')</title>
   </head>
   <body>
- 
-  <nav class="navbar navbar-expand-lg bg-info navbar-dark sticky-top">
-  <a class="navbar-brand" href="#">RFID</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse nav justify-content-center" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">หน้าแรก <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">ตารางกิจกรรม</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">ติดต่อสอบถาม</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">เข้าสู่ระบบ</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+  <div class="container bg-light">
+    <div class="row"><h5>@yield('head')</h5></div>
+    <div class="row">
+    @yield('content')
+    </div>
 
+
+    
+  </div>
+
+    @include('layouts.footer')
+
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -19,6 +19,10 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/test', function () {
-    return view('home2');
+Route::get('/calendar', function () {
+    return view('schedule');
+});
+
+Route::get('blade', function () {
+    return view('child');
 });
