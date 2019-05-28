@@ -1,14 +1,24 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		$(document).ready(function() {
 
-@section('title','RFID')
+    // page is now ready, initialize the calendar..
+    $('#calendar').fullCalendar({
+        weekends: false,
+        dayClick: function() {
+          alert('a day has been clicked!');
+        },
+        defaultView: 'agendaWeek'
+        
+    });
+	</style>
+</head>
+<body>
+ <div id='calendar'></div>
+</body>
+</html>
 
-@include('layouts.nevbar')
 
-
-
-<div class="input-group input-group-sm mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
-  </div>
-  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-</div>
