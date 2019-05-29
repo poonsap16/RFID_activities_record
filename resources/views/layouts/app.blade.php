@@ -12,14 +12,13 @@
   </head>
   <body>
   <div class="container bg-light">
-    <div class="row"><h5>@yield('head')</h5></div>
-    <div class="row">
+<h5>@yield('head')</h5>
+
     @yield('content')
-    </div>
 
 
-    
   </div>
+
 
     @include('layouts.footer')
 

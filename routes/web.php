@@ -23,7 +23,7 @@ Route::get('/calendar', function () {
     return view('schedule');
 });
 
-Route::get('blade', function () {
-    return view('child');
+Route::get('report', function () {
+    return view('report');
 });
 //
